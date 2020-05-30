@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="376" height="227" viewBox="0 0 376 227">
+  <g id="Group_2" data-name="Group 2" transform="translate(-500 346)">
+    <g id="Group_1" data-name="Group 1">
+      <circle id="Ellipse_1" data-name="Ellipse 1" cx="113.5" cy="113.5" r="113.5" transform="translate(500 -346)" fill="#1976d2"/>
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="113.5" cy="113.5" r="113.5" transform="translate(649 -346)" fill="#1976d2"/>
+    </g>
+    <text id="TD" transform="translate(557 -183)" fill="#f6f6f6" font-size="163" font-family="Magneto-Bold, Magneto" font-weight="700"><tspan x="0" y="0">TD</tspan></text>
+  </g>
+</svg>

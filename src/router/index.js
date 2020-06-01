@@ -17,6 +17,14 @@ const routes = [{
         // which is lazy-loaded when the route is visited.
         component: () =>
             import ( /* webpackChunkName: "auth" */ "../views/Auth.vue")
+    },
+    {
+        path: "/todo",
+        name: "Todo",
+        // route level code-splitting
+        // which is lazy-loaded when the route is visited.
+        component: () =>
+            import ( /* webpackChunkName: "todo" */ "../views/Todo.vue")
     }
 ];
 

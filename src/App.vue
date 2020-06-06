@@ -25,3 +25,9 @@ export default {
   })
 };
 </script>
+
+<style lang="scss" scoped>
+  v-content {
+    padding-top: 1rem;
+  }
+</style>

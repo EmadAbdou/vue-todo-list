@@ -5,7 +5,7 @@
         <v-row>
           <v-card class="pa-4 card mx-auto" tile>
             <!-- <v-text-field label="Add Todo Item" :rules="rules" hide-details="auto"></v-text-field> -->
-            <v-text-field label="Add Todo Item" :rules="rules" hide-details="auto"></v-text-field>
+            <v-text-field label="Add Todo Item" v-model="newItem" @keydown.enter="addItem()" hide-details="auto"></v-text-field>
           </v-card>
         </v-row>
       </v-col>
@@ -22,12 +22,29 @@
 
 <script>
 import TodoList from "../components/Todo-list";
+import { db } from "../firebase/db";
 
 export default {
   // data: () => ({
   //   rules: [value => !!value || "Required."]
   // }),
-  components: { TodoList }
+  data() {
+    return {
+     newItem: ""
+    }
+  },
+  components: { TodoList },
+  methods: {
+    async addItem() {
+      if(this.newItem) {
+        await db.collection('ToDos').add({
+          icon: true,
+          title: this.newItem
+        });
+        this.newItem = '';
+      }
+    }
+  },
 };
 </script>
 
